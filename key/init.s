@@ -1,0 +1,6 @@
+	AREA |DATA|,CODE,READONLY
+	ENTRY
+	ldr r13,=0x1000
+	IMPORT KeyMain
+	b KeyMain
+	END

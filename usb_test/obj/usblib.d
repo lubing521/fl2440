@@ -1,0 +1,10 @@
+.\obj\usblib.o: Src\usblib.c
+.\obj\usblib.o: d:\Keil\ARM\RV31\INC\string.h
+.\obj\usblib.o: ..\common\Inc\option.h
+.\obj\usblib.o: ..\common\Inc\2440addr.h
+.\obj\usblib.o: ..\common\Inc\2440lib.h
+.\obj\usblib.o: ..\common\Inc\def.h
+.\obj\usblib.o: .\Inc\2440usb.h
+.\obj\usblib.o: .\Inc\usbmain.h
+.\obj\usblib.o: .\Inc\usblib.h
+.\obj\usblib.o: .\Inc\usbsetup.h

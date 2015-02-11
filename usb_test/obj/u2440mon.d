@@ -1,0 +1,13 @@
+.\obj\u2440mon.o: Src\u2440mon.c
+.\obj\u2440mon.o: d:\Keil\ARM\RV31\INC\stdlib.h
+.\obj\u2440mon.o: d:\Keil\ARM\RV31\INC\string.h
+.\obj\u2440mon.o: ..\common\Inc\def.h
+.\obj\u2440mon.o: ..\common\Inc\option.h
+.\obj\u2440mon.o: ..\common\Inc\2440addr.h
+.\obj\u2440mon.o: ..\common\Inc\2440lib.h
+.\obj\u2440mon.o: ..\common\Inc\2440slib.h
+.\obj\u2440mon.o: .\Inc\profile.h
+.\obj\u2440mon.o: .\Inc\usbmain.h
+.\obj\u2440mon.o: .\Inc\usbout.h
+.\obj\u2440mon.o: .\Inc\usblib.h
+.\obj\u2440mon.o: .\Inc\2440usb.h

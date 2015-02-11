@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include "2440addr.h"
+#include "2440lib.h"
+#include "2440slib.h"
+#include "Target.h"
+#include "Def.h"
+#include "option.h"
+#include "uc_os.h"
+//#include "app_cfg.h"
+//#include "lcd.h"
+//#include "iic.h"
+//#include "touchpanel.h"
+//#include "led.h"
+
+#define	EnableIrq(bit)		rINTMSK &= ~(bit)
+#define	DisableIrq(bit)		rINTMSK |= (bit)
+#define	EnableSubIrq(bit)	rINTSUBMSK &= ~(bit)
+#define	DisableSubIrq(bit)	rINTSUBMSK |= (bit)
+
+/*
+__inline void ClearPending(int bit)
+{
+	register i;
+	rSRCPND = bit;
+	rINTPND = bit;
+	i = rINTPND;
+}
+
+__inline void ClearSubPending(int bit)
+{
+	register i;
+	rSUBSRCPND = bit;	
+	i = rINTPND;
+}   
+       
+*/    

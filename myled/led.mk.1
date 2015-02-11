@@ -1,0 +1,40 @@
+
+AS=armasm
+CC=armcc
+LD=armlink
+FE=fromelf
+
+
+SRC_PATH = .\src
+INCLUDES_PATH = .\include
+OBJS_PATH = .\objs
+
+ASFLAGS = -g --cpu ARM920T
+CCFLAGS = -c -O1 -g --cpu ARM920T
+LDFLAGS = --info totals --ro-base 0x32000000 --first init.o
+FEFLAGS = -c --bin --output 
+
+INCLUDES = -I$(INCLUDES_PATH)
+
+OBJS = $(OBJS_PATH)\main.o 
+OBJS += $(OBJS_PATH)\init.o
+
+
+all: led.axf
+	@if exist *.axf echo Build completed
+
+rebuild: clean all
+
+clean:
+	if exist *.o del *.o
+	if exist *.axf del *.axf
+
+led.axf: $(OBJS)
+	$(LD) $(OBJS) $(LDFLAGS) -o led.axf
+	$(FE) led.axf $(FEFLAGS) led.bin
+
+$(OBJS_PATH)\main.o: $(SRC_PATH)\main.c 
+	$(CC) $(CCFLAGS) $(INCLUDES) $(SRC_PATH)\main.c -o $(OBJS_PATH)\main.o
+
+$(OBJS_PATH)\init.o: $(SRC_PATH)\init.s
+	$(AS) $(ASFLAGS) $(SRC_PATH)\init.s -o $(OBJS_PATH)\init.o

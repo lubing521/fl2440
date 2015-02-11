@@ -1,0 +1,11 @@
+.\obj\2440lib.o: ..\common\Src\2440lib.c
+.\obj\2440lib.o: ..\common\Inc\def.h
+.\obj\2440lib.o: ..\common\Inc\option.h
+.\obj\2440lib.o: ..\common\Inc\2440addr.h
+.\obj\2440lib.o: ..\common\Inc\2440lib.h
+.\obj\2440lib.o: ..\common\Inc\2440slib.h
+.\obj\2440lib.o: d:\Keil\ARM\RV31\INC\stdarg.h
+.\obj\2440lib.o: d:\Keil\ARM\RV31\INC\string.h
+.\obj\2440lib.o: d:\Keil\ARM\RV31\INC\stdlib.h
+.\obj\2440lib.o: d:\Keil\ARM\RV31\INC\stdio.h
+.\obj\2440lib.o: d:\Keil\ARM\RV31\INC\ctype.h

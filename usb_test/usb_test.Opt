@@ -1,0 +1,51 @@
+### uVision2 Project, (C) Keil Software
+### Do not modify !
+
+ cExt (*.c)
+ aExt (*.s*; *.src; *.a*)
+ oExt (*.obj)
+ lExt (*.lib)
+ tExt (*.txt; *.h; *.inc)
+ pExt (*.plm)
+ CppX (*.cpp)
+ DaveTm { 0,0,0,0,0,0,0,0 }
+
+Target (usb_test), 0x0004 // Tools: 'ARM-ADS'
+GRPOPT 1,(startup),1,0,0
+GRPOPT 2,(Source Files),1,0,0
+GRPOPT 3,(Common Files),1,0,0
+GRPOPT 4,(Readme),1,0,0
+
+OPTFFF 1,1,2,0,0,0,0,0,<..\common\Src\S3C2440A.s><S3C2440A.s> 
+OPTFFF 2,2,1,637534208,0,0,0,0,<.\Src\usbsetup.c><usbsetup.c> 
+OPTFFF 2,3,1,0,0,0,0,0,<.\Src\profile.c><profile.c> 
+OPTFFF 2,4,1,0,0,0,0,0,<.\Src\u2440mon.c><u2440mon.c> 
+OPTFFF 2,5,1,0,0,0,0,0,<.\Src\usbin.c><usbin.c> 
+OPTFFF 2,6,1,0,0,0,0,0,<.\Src\usblib.c><usblib.c> 
+OPTFFF 2,7,1,83886080,0,0,0,0,<.\Src\usbmain.c><usbmain.c> 
+OPTFFF 2,8,1,0,0,0,0,0,<.\Src\usbout.c><usbout.c> 
+OPTFFF 3,9,1,0,0,0,0,0,<..\common\Src\2440lib.c><2440lib.c> 
+OPTFFF 4,10,5,1056964610,0,43,61,0,<..\Readme\Readme.txt><Readme.txt> { 44,0,0,0,2,0,0,0,3,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,88,0,0,0,116,0,0,0,37,3,0,0,178,1,0,0 }
+
+
+TARGOPT 1, (usb_test)
+ ADSCLK=12000000
+  OPTTT 1,1,1,0
+  OPTHX 1,65535,0,0,0
+  OPTLX 79,66,8,<.\>
+  OPTOX 16
+  OPTLT 1,1,1,0,1,1,0,1,0,0,0,0
+  OPTXL 1,1,1,1,1,1,1,0,0
+  OPTFL 1,0,1
+  OPTAX 255
+  OPTBL 0,(User's Manual)<DATASHTS\SAMSUNG\S3C2440_UM.PDF>
+  OPTDL (SARM.DLL)()(DARMSS9.DLL)(-pS3C2440A)(SARM.DLL)()(TARMSS9.DLL)(-pS3C2440A)
+  OPTDBG 47614,0,()()()()()()()()()(..\common\Ext_RAM.ini) (BIN\UL2ARM.DLL)()()()
+  OPTKEY 0,(DLGTARM)((113=-1,-1,-1,-1,0)(100=-1,-1,-1,-1,0)(102=-1,-1,-1,-1,0)(103=-1,-1,-1,-1,0)(104=-1,-1,-1,-1,0)(105=-1,-1,-1,-1,0)(106=-1,-1,-1,-1,0)(107=-1,-1,-1,-1,0)(108=-1,-1,-1,-1,0)(109=-1,-1,-1,-1,0)(110=-1,-1,-1,-1,0)(111=-1,-1,-1,-1,0)(112=-1,-1,-1,-1,0))
+  OPTKEY 0,(ARMDBGFLAGS)()
+  OPTKEY 0,(UL2ARM)(-UV0082S9E -O40 -S0 -C0 -N00("ARM920T Core") -D00(0032409D) -L00(4) -FO7 -FD40000000 -FC1000 -FN1 -FF0S3C2440_NAND_SP -FS00 -FL0200000)
+  OPTDF 0x86
+  OPTLE <>
+  OPTLC <>
+EndOpt
+

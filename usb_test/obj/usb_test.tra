@@ -1,0 +1,27 @@
+*** Creating Trace Output File '.\obj\usb_test.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\obj\s3c2440a.o"'
+### List of Objects: adding '".\obj\usbsetup.o"'
+### List of Objects: adding '".\obj\profile.o"'
+### List of Objects: adding '".\obj\u2440mon.o"'
+### List of Objects: adding '".\obj\usbin.o"'
+### List of Objects: adding '".\obj\usblib.o"'
+### List of Objects: adding '".\obj\usbmain.o"'
+### List of Objects: adding '".\obj\usbout.o"'
+### List of Objects: adding '".\obj\2440lib.o"'
+### ADS-LD Command completed:
+".\obj\s3c2440a.o" ".\obj\usbsetup.o" ".\obj\profile.o" ".\obj\u2440mon.o" ".\obj\usbin.o" ".\obj\usblib.o" ".\obj\usbmain.o" ".\obj\usbout.o" ".\obj\2440lib.o" --device DARMSS9 --strict --scatter "..\common\RuninRAM.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\usb_test.map" -o ".\obj\usb_test.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\obj\usb_test.axf'
+### ADS-LD Command File: '.\obj\usb_test.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\obj\usb_test.lnp', Handle=0x0000020C
+### Writing '.lnp' file
+### ADS-LD Command file '.\obj\usb_test.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.
